@@ -169,7 +169,7 @@ nav ul li a:hover span:last-child:after
 /*	Content Page*/
 .inner-content
 {
-    height: 1000px;
+    height: 100%;
     margin-top: 10px;
 	
     border-radius: 20px;
@@ -237,20 +237,7 @@ ul{
 .img-box li a:hover{
     color: rgba(225,225,225,0.1);
 }
-/*	END Content Profile Page*/
-/*	Download Content Page*/
-.download-1
-{
-    width: 1000px;
-    height: 200px;
-    margin: 0 auto;
 
-    border-radius: 20px;
-    background-color: rgba(0,150,220,.2);
-}
-
-/*	END Content Download Page*/
-/*	Screens Content Page*/
 .gallery
 {
     width: 80%;
@@ -266,4 +253,75 @@ ul{
 .gallery img:hover
 {
     transform: scale(1.2);
+}
+
+@media screen and (max-width: 700px){
+	header{
+		width: 670px;
+	}
+	.inner-header{
+		display: flex;
+		flex-direction: column;
+	}
+	.navbar img{
+		margin: 0;
+	}
+
+	.inner-content{
+		width: 670px;
+	}
+	.gallery{
+		display: inline-flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		width: 100%;
+		margin-left: 5%;
+	}
+	.gallery img
+	{
+    	width: 500px;
+		padding: 12px;
+    	transition: .4s;
+	}
+}
+
+@media screen and (max-width: 400px){
+	nav ul li{
+		padding: 20px 10px;
+		margin-left: 10px;
+	}
+
+	nav ul li a{
+		font-size: 10px;
+		padding: 0;
+	}
+	header{
+		width: 370px;
+	}
+	.inner-header{
+		display: flex;
+		flex-direction: column;
+	}
+	.navbar img{
+		margin: 0;
+	}
+
+	.inner-content{
+		width: 370px;
+	}
+	.gallery{
+		display: inline-flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		width: 100%;
+		margin-left: 5%;
+	}
+	.gallery img
+	{
+    	width: 290px;
+		padding: 2px;
+    	transition: .4s;
+	}
 }
