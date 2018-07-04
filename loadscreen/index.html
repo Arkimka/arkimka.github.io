@@ -6,27 +6,6 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
-	<script>
-
-		var x = document.getElementById("myAudio");
-		x.autoplay = true;
-		x.loop = true;
-		x.load();
-		x.volume = 0.5;
-		
-		var img = [
-		'images/1.jpg',
-		'images/2.png',
-		'images/3.jpg',
-		'images/4.png'
-		];
-
-		$('.fullBackground').fullClip({
-			images: [img[0],img[1],img[2],img[3]],
-			transitionTime: 2000,
-			wait: 5000
-		})
-	</script>
 </head>
 <body>
 	<audio id="myAudio">
@@ -49,9 +28,29 @@
 
 		<p>Music: Unknown Brain - Inspiration (feat. Aviella)</p>
 	</section>
+	<script>
+		var x = document.getElementById("myAudio");
+		x.autoplay = true;
+		x.loop = true;
+		x.load();
+		x.volume = 0.5;
+		
+		var img = [
+		'images/1.jpg',
+		'images/2.png',
+		'images/3.jpg',
+		'images/4.png'
+		];
 
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/fullClip.js"></script>
+		$('.fullBackground').fullClip({
+			images: [img[0],img[1],img[2],img[3]],
+			transitionTime: 2000,
+			wait: 5000
+		})
+	</script>
+	
+	<script src="js/jquery-3.3.1.min.js" defer></script>
+	<script src="js/fullClip.js" defer></script>
 
 </body>
 </html>
