@@ -29,6 +29,13 @@
 		<p>Music: Unknown Brain - Inspiration (feat. Aviella)</p>
 	</section>
 	<script>
+	
+		$('.fullBackground').fullClip({
+			images: [img[0],img[1],img[2],img[3]],
+			transitionTime: 2000,
+			wait: 5000
+		})
+		
 		var x = document.getElementById("myAudio");
 		x.autoplay = true;
 		x.loop = true;
@@ -41,15 +48,9 @@
 		'images/3.jpg',
 		'images/4.png'
 		];
-
-		$('.fullBackground').fullClip({
-			images: [img[0],img[1],img[2],img[3]],
-			transitionTime: 2000,
-			wait: 5000
-		})
 	</script>
 	
-	<script src="js/fullClip.js" defer></script>
-	<script src="js/jquery-3.3.1.min.js" defer></script>
+	<script src="js/fullClip.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
 </body>
 </html>
