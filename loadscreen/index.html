@@ -8,7 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
 </head>
 <body>
-	<audio id="myAudio" autoplay loop>
+	<audio id="myAudio">
 		<source src="music/inspiration.mp3" type="audio/mpeg">
 	</audio>
 
@@ -33,9 +33,13 @@
 	<script src="js/fullClip.js"></script>
 
 	<script>
-		var x = document.getElementById("myAudio");
-		x.volume = 0.5;
 
+		var x = document.getElementById("myAudio");
+		x.autoplay = true;
+		x.loop = true;
+		x.load();
+		x.volume = 0.5;
+		
 		var img = [
 		'images/1.jpg',
 		'images/2.png',
