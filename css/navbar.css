@@ -1,0 +1,185 @@
+/* =============== */
+/*    NAVBAR       */
+/* =============== */
+.logo{
+  background: rgba(0,0,25,.5);
+  display: flex;  
+  justify-content: center;
+  line-height: 10px;
+  text-align: center;
+  font-family: 'Fredericka the Great';
+  font-size: 23px;
+  color: #fff;
+}
+
+.menu-icon {
+      line-height: 20px;
+      width: 100%;
+      background: rgba(0,0,25,.6);
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+      transition: .2s;
+}
+
+nav ul{
+  font-family: Raleway;
+  line-height: 30px;
+  list-style: none;
+  background: rgba(0, 0, 35, 0.4);
+  overflow: hidden;
+  color: #fff;
+  display: flex;
+  text-align: center;
+
+  padding: 0;
+  margin: 0 auto;
+
+  align-items: center;
+  transition: 0.8s;
+
+}
+
+nav a {
+  font-size: 1.3em;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 4px;
+  border-radius: 5%;
+  display: inline-block;
+  position: relative;
+  padding: 10px 20px;
+  color: white;
+  transition: .2s;
+
+  width: 100px;
+}
+
+nav ul li {
+  width: 100%;
+  padding: 15px;
+  justify-content:  center;
+}
+
+nav ul li a span:first-child:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 8px;
+    height: 8px;
+
+    content: '';
+    transition: .3s;
+
+    opacity: 0;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    background: transparent;
+}
+nav ul li a span:first-child:after
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 8px;
+    height: 8px;
+
+    content: '';
+    transition: .3s;
+
+    opacity: 0;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    background: transparent;
+}
+nav ul li a span:last-child:before
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 8px;
+    height: 8px;
+
+    content: '';
+    transition: .3s;
+
+    opacity: 0;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    background: transparent;
+}
+nav ul li a span:last-child:after
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 8px;
+    height: 8px;
+
+    content: '';
+    transition: .3s;
+
+    opacity: 0;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+}
+/* =============== */
+/*    END NAVBAR   */
+/* =============== */
+
+/* ================= */
+/* START NAVBAR ANIM */
+/* ================= */
+nav ul li a:hover{
+  background: rgba(0,150,220,.5);
+	text-shadow: 1px 1px 2px black, 0 0 1em white;
+	box-shadow: 0 0 15px rgba(0,150,220,0.8);
+	border-radius: 0;
+	color: #FFFF00;
+}
+
+nav ul li a:hover span:first-child:before
+{
+    top: -4px;
+    left: -4px;
+	
+    opacity: 1;
+}
+nav ul li a:hover span:first-child:after
+{
+    top: -4px;
+    right: -4px;
+
+    opacity: 1;
+}
+nav ul li a:hover span:last-child:before
+{
+    bottom: -4px;
+    left: -4px;
+
+    opacity: 1;
+}
+nav ul li a:hover span:last-child:after
+{
+    right: -4px;
+    bottom: -4px;
+
+    opacity: 1;
+}
+.menu-icon:hover{
+  color: yellow;
+  box-shadow: 0 0 15px rgba(0,150,220,0.8);
+}
+/* =============== */
+/* END NAVBAR ANIM */
+/* =============== */
+

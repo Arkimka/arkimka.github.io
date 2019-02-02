@@ -1,0 +1,66 @@
+@media all and (max-width: 768px) {
+  nav ul{
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 768px) {
+body{
+    margin: 0;
+    padding: 0;
+	
+    background: url(../files/backg.jpg) no-repeat;
+	background-attachment: fixed;
+}
+
+nav ul li a:hover{
+	text-shadow: 1px 1px 2px black, 0 0 1em white;
+	box-shadow: 0 0 25px rgba(0,150,220,0.8);
+	border-radius: 0%;
+	width: 100%;
+}
+
+nav ul {
+	line-height: 45px;
+    max-height: 0px;
+    background: rgba(0,0,35,.5);
+    display: block;
+}
+
+nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+    display: flex;
+}
+nav a {
+  font-size: 1.1em;
+}
+
+.showing {
+    max-height: 25em;
+}
+.menu-icon {
+    display: block;
+}
+.logo{
+  display: flex;
+  margin: 0;
+  padding: 0 30px;
+  font-size: 23px;
+  position: fixed;
+  background: rgba(0,0,0,0);
+
+}
+.main{
+  margin: 0px 50px;
+  padding-bottom: 10px;
+}
+.main p{
+  font-size: 15px;
+}
+.items{
+  width: 90%;
+}
+}
