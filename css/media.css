@@ -9,8 +9,8 @@ body{
     margin: 0;
     padding: 0;
 	
-    background: url(../files/backg.jpg) no-repeat;
-	background-attachment: fixed;
+    background: url(../files/backg.jpg) repeat;
+	  background-attachment: fixed;
 }
 
 nav ul li a:hover{
@@ -61,6 +61,6 @@ nav a {
   font-size: 15px;
 }
 .items{
-  width: 90%;
+  width: 100%;
 }
 }
