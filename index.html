@@ -1,58 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Arkimka's blog</title>
-	<script type="text/javascript" src="js/preloader.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/navbar.css">
-	<link rel="stylesheet" href="css/body.css">
-	<link rel="stylesheet" href="css/media.css">
-	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
 
+    <meta charset="utf-8">
+    <title>gmod-loadingscreen</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/app.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+
+	</head>
 <body>
-	<div id="page-pre" class="preloader">
-		<div class="loader"></div>
-		<p>Подождите пока загрузится..</p>
-	</div>
-	
-	<div class="wrapper">
-		<header>
-			<div class="logo">
-				<p>Arkimka's Blog</p>
-			</div>
+    <div class="overlay">
+        <h1>ARK 국제적인 서버 [Wire E2 Extra & Fun]</h1>
+        <div class="container">
+            <div class="box server-info">
+                <h2>Info</h2>
+                <ul>
+                    <li>
+                        <img class="player-avatar" data-avatarfull src="#" alt="Player Avatar">
+                        <p>
+                            Hello<strong data-personaname></strong>, welcome to <span data-servername></span>, have fun and enjoy your session!
+                        </p>
+                    </li>
+                    <li>
+                        <i class="icon-map"></i> <span data-mapname></span>
+                    </li>
+                    <li>
+                        <i class="icon-people"></i>max <span data-maxplayers></span> players
+                    </li>
+                    <li>
+                        <i class="icon-game-controller"></i> <span data-gamemode></span>
+                    </li>
+                    <li>
+                        <i class="icon-social-steam"></i> <span data-status></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="box rules">
+                <h2>Rules</h2>
+                <ul data-rules>
 
-			<nav>
-				<div class="menu-icon">
-					<i class="fa fa-bars fa-2x"></i>
-				</div>
+                </ul>
+            </div>
+            <div class="loadingbar">
+                <div class="progress" style="width:0%"></div>
+                Downloading <span class="file" data-currentfile></span>
+                <span class="percentage">
+                    (<span data-files-loaded></span>/<span data-files-total></span>) 
+                    <span data-percentage></span>%
+                </span>
+            </div>
+        </div>
+    </div>
 
-				<div class="menu">
+    <audio autoplay loop></audio>
 
-					<ul>
-					  <li><a href="index">Main<span></span><span></span></a></li>
-					  <li><a href="co">Content<span></span><span></span></a></li>
-					  <li><a href="#">/DEV<span></span><span></span></a></li>
-					</ul>
-				</div>
-
-			</nav>
-		</header>
-
-		<div class="main">
-			<h1>Welcome!</h1>
-			<p>Приветствую мой друг!
-			Данный вебсайт предназначен исключительно в познавательных целях.
-			</p>
-			
-		</div>
-	</div>
-
-		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-      	<script type="text/javascript" src="js/navbar.js" defer></script>
+    <script src="config.js"></script>
+    <script src="assets/js/functions.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/demo.js"></script>
 </body>
 </html>
